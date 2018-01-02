@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Брестский стандарт</title>
+    <link rel="stylesheet" type="text/css" href="css/fontcss.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shotcut icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+    <header class="row">
+        <div class="col-xs-4 col-sm-2 logo">
+        <img src="images/logo.png" alt="Логотип">
+        </div>
+        <div class="col-lg-10 col-md-10  col-sm-10 col-xs-12 navbar-wrapper">
+                <nav class="navbar hnavbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="nav navbar-nav ul_none">
+                            <li class="active"><a href="#">О компании <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left clearfix">
+                            <div class="form-group">
+                                    <input type="text" class="hform-control search_" placeholder="/ Введите запрос..."><span class="search_button"></span>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+    </header>
+    </div>
+    <div class="content-all">
+        <div class="container">
+            <div class="row" style="position: relative;">
+                <div id="carousel" class="carousel slide" data-interval="7500" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active first_slide">
+                            <div class="wrapper_text_slide">
+                                <p>Ваш выбор,<br> наша работа! </p>
+                                <a href="#">Узнать подробнее</a>
+                            </div>
+                        </div>
+                        <div class="item first_slide">
+                            <div class="wrapper_text_slide">
+                                <p>Ваш выбор,<br> наша работа! </p>
+                                <a href="#">Узнать подробнее</a>
+                            </div>
+                        </div>
+                        <div class="item first_slide">
+                            <div class="wrapper_text_slide">
+                                <p>Ваш выбор,<br> наша работа! </p>
+                                <a href="#">Узнать подробнее</a>
+                            </div>
+                        </div>
+                        <div class="item first_slide">
+                            <div class="wrapper_text_slide">
+                                <p>Ваш выбор,<br> наша работа! </p>
+                                <a href="#">Узнать подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <a  href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon-chevron-left"><img src="images/left.png"></span>
+        </a>
+        <a href="#carousel" class="right carousel-control"  data-slide="next">
+            <span class="glyphicon-chevron-right"><img src="images/right.png"></span>
+        </a>
+    </div>
+    <footer>
+        <div class="container">&copy; 2017 Охота Берестейская</div>
+    </footer>
+
+    <script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    $('.search_button').click(function(){
+            var screen = $(window).width();
+            if (screen >=768) {
+                $(this).toggleClass('search_opened');
+                $('.ul_none').toggleClass('hidd');
+                $('.search_').toggleClass('visib');
+                $('.form-group').toggleClass('add_border');
+            }
+            else {
+                $(this).toggleClass('search_opened');
+                $('.search_').toggleClass('visib');
+                $('.form-group').toggleClass('add_border');
+            }
+        });
+    </script>
+</body>
+</html>

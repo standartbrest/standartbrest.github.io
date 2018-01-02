@@ -1,0 +1,25 @@
+@font-face {
+font-family: 'OpenSens Bold';
+font-style: normal;
+font-weight: normal;
+src: url('../fonts/opensansbold.ttf') format('TrueType'), url('../fonts/opensansbold.woff') format('woff');
+}
+@font-face {
+font-family: 'OpenSens ExtraBold';
+font-style: normal;
+font-weight: normal;
+src: url('../fonts/opensansextrabold.ttf') format('TrueType'), url('../fonts/opensansextrabold.woff') format('woff');
+}
+@font-face {
+font-family: 'OpenSens SemiBold';
+font-style: normal;
+font-weight: normal;
+src: url('../fonts/opensanssemibold.ttf') format('TrueType'), url('../fonts/opensanssemibold.woff') format('woff');
+}
+@font-face {
+    font-family: 'MuseoSansCyrl500';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Museosanscyrl500.ttf') format('TrueType'), url('../fonts/Museosanscyrl500.woff') format('woff');
+    }
+    
